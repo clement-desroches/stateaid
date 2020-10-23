@@ -1,9 +1,9 @@
 import pandas as pd 
 import numpy as np
 
-bdd = pd.read_csv('bdd.csv')
-df = pd.read_csv('tous_pays.csv')
-nace = pd.read_csv('tous_pays_nace.csv')
+bdd = pd.read_csv('data/bdd.csv')
+df = pd.read_csv('data/tous_pays.csv')
+nace = pd.read_csv('data/tous_pays_nace.csv')
 
 companies_df = np.sort(list(set(list(df['BVDID'])))) #companies in 'tous_pays.csv'
 
